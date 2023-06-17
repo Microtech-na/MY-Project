@@ -10,8 +10,6 @@ import org.openqa.selenium.support.PageFactory;
 import base.Base;
 
 public class Etsy_Landing_Page extends Base {
-	
-	WebDriver driver;
 
 	public Etsy_Landing_Page(WebDriver driver) {
 		this.driver = driver;

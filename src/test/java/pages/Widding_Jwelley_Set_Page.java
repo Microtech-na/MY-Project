@@ -8,8 +8,6 @@ import org.openqa.selenium.support.PageFactory;
 import base.Base;
 
 public class Widding_Jwelley_Set_Page extends Base {
-	
-	WebDriver driver;
 
 	public Widding_Jwelley_Set_Page(WebDriver driver) {
 		this.driver = driver;
