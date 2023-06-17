@@ -15,7 +15,17 @@ public class Verify_In_Etsy_Jwellery_Wine_Is_Displayed extends Base{
 	
 	@Given("I am in etsy home page")
 	public void i_am_in_etsy_home_page() {
-		landingPage.navigateURL();
+
+	if(driver != null) {
+			landingPage.navigateURL();
+			
+		} else {
+			// Handle case when the driver is not initialized
+			System.out.println("Driver is not initialized");
+		}
+
+		
+		
 	}
 
 	@When("I hover on Wedding & Party")
