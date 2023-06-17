@@ -27,21 +27,15 @@ public class Hooks extends Base {
 
 	}
 
-	@After
-	public void tearDown(Scenario scenario) {
-		try {
-			String screenshotName= scenario.getName().replace("", "");
-			if(scenario.isFailed()) {
-				scenario.log("this is my failure message");
-				TakesScreenshot ts = (TakesScreenshot)driver;
-				byte[]screenshot = ts.getScreenshotAs(OutputType.BYTES);
-				scenario.attach(screenshot, "image/png", screenshotName);
-			}
-		}
-		catch(Exception e) {
-			e.printStackTrace();
-		}
+
+
+  @After
+    public void tearDown() {
+        if (driver != null) {
+            driver.quit(); 
+        }
+    }
 		
 	
-	}
+	
 }
