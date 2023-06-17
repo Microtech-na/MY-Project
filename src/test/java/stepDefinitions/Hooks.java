@@ -24,10 +24,7 @@ public class Hooks extends Base {
 		ChromeOptions opt = new ChromeOptions();
 		
 		 driver = new RemoteWebDriver(new URL("http://3.145.197.131:4444"),opt);
-//		ChromeOptions option = new ChromeOptions();
-//		WebDriverManager.chromedriver().setup();
-//		driver = new ChromeDriver(option);
-//		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+
 	}
 
 	@After
